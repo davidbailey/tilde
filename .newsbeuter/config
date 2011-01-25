@@ -1,0 +1,6 @@
+auto-reload yes
+browser "chromium-browser %u"
+refresh-on-startup yes
+bind-key k up
+bind-key j down
+
