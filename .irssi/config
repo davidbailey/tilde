@@ -1,0 +1,46 @@
+servers = (
+  {
+    address = "irc.freenode.net";
+    chatnet = "freenode";
+    port = "7000";
+    use_ssl = "yes";
+    ssl_verify = "no";
+    autoconnect = "yes";
+    password = "";
+  },
+  {
+    address = "talk.google.com";
+    port = "5223";
+    use_ssl = "yes";
+    chatnet = "xmppnet";
+    password = "";
+    autoconnect = "yes";
+  }
+);
+
+chatnets = {
+  freenode = { type = "IRC"; };
+  xmppnet = { type = "XMPP"; nick = "dbailey@.com"; };
+};
+
+channels = (
+  { name = "#clowns"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "#gentoo-powerpc"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "#node.js"; chatnet = "freenode"; autojoin = "yes"; }
+);
+
+aliases = { J = "join"; WC = "window close"; };
+
+settings = {
+  core = {
+    real_name = "David Bailey";
+    user_name = "dabailey";
+    nick = "dabailey";
+  };
+  "perl/core/scripts" = { short_url_provider = "0"; };
+};
+
+ignores = (
+  { level = "JOINS PARTS QUITS"; channels = ( "#gentoo-powerpc" ); },
+  { level = "JOINS PARTS QUITS"; channels = ( "#node.js" ); }
+);
