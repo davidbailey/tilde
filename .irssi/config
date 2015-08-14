@@ -9,6 +9,15 @@ servers = (
     password = "";
   },
   {
+    address = "irc.efnet.org";
+    chatnet = "efnet";
+    port = "7000";
+    use_ssl = "yes";
+    ssl_verify = "no";
+    autoconnect = "yes";
+    password = "";
+  },
+  {
     address = "talk.google.com";
     port = "5223";
     use_ssl = "yes";
@@ -20,13 +29,22 @@ servers = (
 
 chatnets = {
   freenode = { type = "IRC"; };
+  efnet = { type = "IRC"; };
   xmppnet = { type = "XMPP"; nick = "dbailey@.com"; };
 };
 
 channels = (
   { name = "#clowns"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "#grubs"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#dc213"; chatnet = "efnet"; autojoin = "yes"; },
+  { name = "#la2600"; chatnet = "efnet"; autojoin = "yes"; },
+  { name = "##security"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "##networking"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "#node.js"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#disco"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#debian"; chatnet = "freenode"; autojoin = "yes"; }
   { name = "#gentoo-powerpc"; chatnet = "freenode"; autojoin = "yes"; }
-  { name = "#node.js"; chatnet = "freenode"; autojoin = "yes"; }
+
 );
 
 aliases = { J = "join"; WC = "window close"; };
@@ -41,6 +59,12 @@ settings = {
 };
 
 ignores = (
-  { level = "JOINS PARTS QUITS"; channels = ( "#gentoo-powerpc" ); },
+  { level = "JOINS PARTS QUITS"; channels = ( "#dc213" ); },
+  { level = "JOINS PARTS QUITS"; channels = ( "#la2600" ); }
+  { level = "JOINS PARTS QUITS"; channels = ( "##security" ); }
+  { level = "JOINS PARTS QUITS"; channels = ( "##networking" ); },
   { level = "JOINS PARTS QUITS"; channels = ( "#node.js" ); }
+  { level = "JOINS PARTS QUITS"; channels = ( "#disco" ); },
+  { level = "JOINS PARTS QUITS"; channels = ( "#debian" ); }
+  { level = "JOINS PARTS QUITS"; channels = ( "#gentoo-powerpc" ); },
 );
