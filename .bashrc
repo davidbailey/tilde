@@ -46,9 +46,10 @@ genuser() {
 export PATH=$PATH:/sbin:/usr/sbin:~/bin
 export LANG=en_US.UTF-8
 export TERM=xterm
-HISTSIZE=1000000 # make bash_history really big
-HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
-HISTCONTROL=ignoreboth
+export HISTTIMEFORMAT="%d/%m/%y %T "
+export HISTSIZE=1000000 # make bash_history really big
+export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups #delete histtimeformat if you're going to use this.
+export HISTCONTROL=ignoreboth
 shopt -s histappend # append to the history file, don't overwrite it
 shopt -s checkwinsize # check the window size after each command and, if necessary, update the values of LINES and COLUMNS
 #LINUX# PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
