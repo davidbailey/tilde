@@ -15,19 +15,20 @@ alias trafficdump="sudo tcpdump -nn -s0 -i eth0 -w dump.pcap"
 
 ## BASH CONFIG OPTIONS ##
 source /usr/local/Cellar/autojump/22.2.4/share/autojump/autojump.bash
-export PATH=$PATH:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin:~/Library/Python/2.7/bin
+export PATH=$PATH:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin #:~/Library/Python/2.7/bin
 export HISTTIMEFORMAT="%d/%m/%y %T "
 export HISTSIZE=1000000 # make bash_history really big
 
 ## PASSWORD AND USERNAME GENERATORS ##
 genpasswd() {
-  export LC_ALL=C
+  export LC_CTYPE=C
   local l=$1
   [ "$l" == "" ] && l=63
   tr -dc [:graph:] < /dev/urandom | head -c ${l} 
   echo ""
 }
 genuser() {
+  export LC_CTYPE=C
   local l=$1
   [ "$l" == "" ] && l=63
   tr -dc [:alnum:] < /dev/urandom | head -c ${l} 
@@ -35,4 +36,4 @@ genuser() {
 }
 
 ## GREETING ##
-figlet "what's up?" | cowsay -n
+figlet "what's up?" | cowsay -n | ~/.gem/ruby/2.0.0/bin/lolcat
