@@ -10,6 +10,7 @@ alias sortip="sort -n -t. -k1,1 -k2,2 -k3,3 -k4,4"
 alias repeat_ifconfig="while sleep 1; do clear; ifconfig; done"
 alias fixpwdump="iconv -f UTF-16 -t UTF-8 pwdump.txt > pwdump2.txt"
 alias trafficdump="sudo tcpdump -nn -s0 -i eth0 -w dump.pcap"
+alias lockscreen="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 # config cisco switch: monitor session 1 dest int ge 5/48 ; monitor session 1 source int ge 12/39 both
 # unconfig cisco switch: no monitor session 1
 
