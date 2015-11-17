@@ -41,7 +41,10 @@ defaults write com.apple.Safari HomePage ""
 defaults write com.apple.Safari IncludeDevelopMenu -int '1'
 defaults write com.apple.Safari SearchProviderIdentifier "com.duckduckgo"
 defaults write com.apple.Safari SendDoNotTrackHTTPHeader -int '1'
-
+echo "Setting TextEdit Preferences"
+defaults write com.apple.TextEdit CorrectSpellingAutomatically -int '0'
+defaults write com.apple.TextEdit RichText -int '0'
+defaults write com.apple.TextEdit SmartQuotes -int '0'
 
 brew=(
 apache-spark
