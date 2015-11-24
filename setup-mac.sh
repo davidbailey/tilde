@@ -14,12 +14,16 @@ echo "TODO: /Library/Preferences/org.cups.printers.plist"
 echo "TODO: Install adblock; setup bookmarks"
 echo "TODO: configure mail"
 echo "TODO: remove unwanted apps from dock; add terminal"
+#https://github.com/kcrawford/dockutil/blob/master/scripts/dockutil
 echo "TODO: add documents"
-echo "TODO: add screen lock"
 
 echo "Setting Finder Preferences"
 #defaults write com.apple.finder '{ DesktopViewSettings = { IconViewSettings = { arrangeBy = name; iconSize = 128; textSize = 16; }; EmptyTrashSecurely = 1; };}'
 #defaults write com.aple.finder 'EmptyTrashSecurely' -int '1'
+echo "Setting Screen Saver Timeout"
+defaults write ~/Library/Preferences/ByHost/com.apple.screensaver.plist "askForPassword" -int '1'
+defaults write ~/Library/Preferences/ByHost/com.apple.screensaver.plist "askForPasswordDelay" -int '5'
+defaults write ~/Library/Preferences/ByHost/com.apple.screensaver.plist "loginWindowIdleTime" -int '600'
 echo "Setting Background Image"
 defaults write com.apple.desktop Background '{default = {ImageFilePath = "/Library/Desktop Pictures/Black & White/Lightning.jpg"; };}'
 echo "Setting Menu Preferences"
