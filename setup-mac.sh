@@ -39,6 +39,7 @@ sudo defaults write /Library/Preferences/com.apple.alf.plist globalstate -int '0
 sudo defaults write /Library/Preferences/com.apple.alf.plist stealthenabled -int '1'
 echo "Setting Terminal Preferences"
 defaults write com.apple.Terminal "Default Window Settings" 'Pro'
+defaults write com.apple.Terminal FocusFollowsMouse -string YES
 echo "Setting Safari Preferences"
 defaults write com.apple.Safari AutoFillPasswords -int '1'
 defaults write com.apple.Safari HomePage ""
