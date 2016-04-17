@@ -104,6 +104,7 @@ gpxpy
 gtfstk
 ipwhois
 ldap-paged-search
+lolcat
 lxml
 matplotlib
 numpy
