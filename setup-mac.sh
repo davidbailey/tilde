@@ -56,6 +56,7 @@ apache-spark
 autojump
 cowsay
 figlet
+fortune
 htop-osx
 md5sha1sum
 lynx
