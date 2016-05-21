@@ -55,6 +55,7 @@ brew=(
 apache-spark
 autojump
 cowsay
+docker
 figlet
 fortune
 htop-osx
