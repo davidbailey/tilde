@@ -13,6 +13,7 @@ alias trafficdump="sudo tcpdump -nn -s0 -i eth0 -w dump.pcap"
 alias lockscreen="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 alias generate_username="LC_CTYPE=C tr -dc [:alnum:] < /dev/urandom | head -c 128 && echo ''"
 alias generate_password="LC_CTYPE=C tr -dc [:graph:] < /dev/urandom | head -c 128 && echo ''"
+alias unixtimestamp="date +%s"
 alias world_clock='TZ=America/Los_Angeles date "+Los Angeles: %H:%M:%S  %A %B %d %Y" && TZ=America/New_York date "+New York:    %H:%M:%S  %A %B %d %Y" && TZ=Europe/London date "+London:      %H:%M:%S  %A %B %d %Y" && TZ=Europe/Paris date "+Paris:       %H:%M:%S  %A %B %d %Y" && TZ=Asia/Hong_Kong date "+Hong Kong:   %H:%M:%S  %A %B %d %Y" && TZ=Asia/Tokyo date "+Tokyo:       %H:%M:%S  %A %B %d %Y"'
 # config cisco switch: monitor session 1 dest int ge 5/48 ; monitor session 1 source int ge 12/39 both
 # unconfig cisco switch: no monitor session 1
