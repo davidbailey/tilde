@@ -68,6 +68,7 @@ nmap
 node.js
 sbt
 scala
+Caskroom/cask/aerial
 Caskroom/cask/firefox
 Caskroom/cask/osirix-quicklook
 Caskroom/cask/minecraft
