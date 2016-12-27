@@ -58,6 +58,7 @@ cowsay
 docker
 figlet
 fortune
+geos
 htop-osx
 md5sha1sum
 lynx
@@ -66,6 +67,7 @@ giter8
 graphviz
 nmap
 node.js
+proj
 sbt
 scala
 Caskroom/cask/aerial
