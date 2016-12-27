@@ -61,6 +61,7 @@ fortune
 geos
 htop-osx
 md5sha1sum
+libgeoip
 lynx
 irssi
 giter8
