@@ -87,6 +87,7 @@ Caskroom/cask/vlc
 Caskroom/cask/virtualbox
 Caskroom/cask/chromium
 Caskroom/cask/wireshark
+homebrew/science/r
 )
 
 pip=(
@@ -133,7 +134,7 @@ requests
 rpy2
 scipy
 shapely
-splunk-sdk
+#splunk-sdk
 statsmodels
 sympy
 yaml
@@ -158,7 +159,7 @@ echo "Installing PIP Libraries"
 for i in "${pip[@]}"
 do
    echo "Begin Installing $i"
-   brew install $i
+   pip3 install $i
    echo "Done Installing $i"
 done
 
