@@ -68,6 +68,7 @@ giter8
 graphviz
 nmap
 node.js
+pkg-config
 proj
 sbt
 scala
