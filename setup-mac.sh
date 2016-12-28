@@ -111,6 +111,7 @@ geopandas
 gpxpy
 gtfstk
 ipwhois
+jupyter
 ldap-paged-search
 lolcat
 lxml
