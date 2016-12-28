@@ -91,6 +91,9 @@ homebrew/science/r
 )
 
 pip=(
+seaborn
+pafy
+tqdm
 numericalunits
 beautifulsoup4
 bonjour-py
