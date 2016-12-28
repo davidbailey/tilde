@@ -88,6 +88,12 @@ Caskroom/cask/virtualbox
 Caskroom/cask/chromium
 Caskroom/cask/wireshark
 homebrew/science/r
+terraform
+gnuradio
+awscli
+imagemagick
+unrar
+wget
 )
 
 pip=(
