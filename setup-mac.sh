@@ -62,6 +62,7 @@ geos
 htop-osx
 md5sha1sum
 libgeoip
+librtlsdr
 lynx
 irssi
 giter8
