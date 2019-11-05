@@ -15,12 +15,13 @@ export HISTTIMEFORMAT="%d/%m/%y %T "
 export HISTSIZE=1000000
 export PS1="\[\e[0;32m\]\u@\H:\w 🐎  \$ \[\e[m\]"
 export PATH="~/bin:$PATH"
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # misc
 complete -C aws_completer aws 
 
-if [ -f /usr/local/Cellar/autojump/22.5.1/share/autojump/autojump.bash ]; then
-   source /usr/local/Cellar/autojump/22.5.1/share/autojump/autojump.bash
+if [ -f /usr/local/etc/profile.d/autojump.sh ]; then
+   source /usr/local/etc/profile.d/autojump.sh
 fi
 
 if [ -f ~/.bash_profile.secret ]; then
