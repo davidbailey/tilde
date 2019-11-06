@@ -10,6 +10,11 @@ if [ -f /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/C
    alias lockscreen="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 fi
 
+if command -v nvim >/dev/null 2>&1; then
+   alias vi=nvim
+   alias vim=nvim
+fi
+
 # export
 export HISTTIMEFORMAT="%d/%m/%y %T "
 export HISTSIZE=1000000
