@@ -37,6 +37,22 @@ if [ -f ~/Desktop/tilde/bash_profile ]; then
    source ~/Desktop/tilde/bash_profile
 fi
 
-# greeting
 world_clock
-figlet "what's up?" | cowsay -n | lolcat
+
+# greeting
+
+GREETING="what's up"
+
+if [ -x "$(command -v figlet)" ]; then
+   GREETING="$(figlet "$GREETING")"
+fi
+
+if [ -x "$(command -v cowsay)" ]; then
+   GREETING="$(echo "$GREETING" | cowsay -n)"
+fi
+
+if [ -x "$(command -v lolcat)" ]; then
+   GREETING="$(echo "$GREETING" | lolcat -f)"
+fi
+
+echo "$GREETING"
