@@ -10,7 +10,7 @@ if [ -f /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/C
    alias lockscreen="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 fi
 
-if command -v nvim >/dev/null 2>&1; then
+if [ -x "$(command -v nvim)" ]; then
    alias vi=nvim
    alias vim=nvim
 fi
